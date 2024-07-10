@@ -1,0 +1,789 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  background: #fff;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+.fixed-top{
+  background: #f9f9f9;
+}
+.number_align{
+  display: flex;
+  padding: 0px 0px 0px 10px;
+}
+.top {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #d6e029;
+}
+.banner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.banner::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	background: rgba(214, 224, 41, 0.9);
+	z-index: 1;
+	width: 50%;
+	height: 100%;
+  }
+  .banner::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	background: rgba(47, 58, 57, 0.9);
+	z-index: 1;
+	width: 50%;
+	height: 100%;
+  }
+.navbar-light .navbar-nav .nav-link {
+  color: #1f2730;
+  font-size: 15px;
+  position: relative;
+  top: 3px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #d6e029;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #d6e029 !important;
+}
+.navbar-nav .nav-item .nav-link.active::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #d6e029;
+  display: block;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  top: 9px;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-nav .nav-item .nav-link::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: #d6e029;
+  display: block;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  top: 9px;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+label a {
+  color: #1f2730;
+  font-weight: 500;
+  font-size: 13px;
+  position: relative;
+  top: 4px;
+  padding: 0px 7px 0px 0px;
+}
+label a:hover {
+  text-decoration: none;
+}
+.number,
+.fa-phone {
+  color: #5f6314;
+}
+.number:hover {
+  text-decoration: none;
+}
+.back {
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 37%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.video {
+  width: 70%;
+  height: 70%;
+  background-color: #2f3a39;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_1 {
+  position: absolute;
+  top: 18%;
+  left: 9%;
+  right: 0;
+  z-index: 2;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.text_2 {
+  position: absolute;
+  top: 27%;
+  left: 9%;
+  right: 0;
+  z-index: 2;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 49px;
+}
+.text_3 {
+  position: absolute;
+  top: 54%;
+  left: 9%;
+  right: 0;
+  z-index: 2;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 39px;
+}
+.play {
+  width: 37px;
+  height: 37px;
+  background-color: #2f3a39;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 62%;
+  left: 9%;
+  right: 0;
+  z-index: 2;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.fa-play {
+  color: #fff;
+  font-size: 13px;
+}
+.video_play {
+  font-size: 30px;
+}
+.text_4 {
+  position: absolute;
+  top: 62%;
+  left: 9%;
+  right: 0;
+  z-index: 2;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 39px;
+}
+.box {
+  width: 411px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d6e029;
+  border-radius: 6px;
+  margin: auto;
+  position: relative;
+  top: -27px;
+  z-index: 5;
+  box-shadow: 7px 26px 16px -22px rgba(0, 0, 0, 0.5);
+}
+.text_5 {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+  top: 4px;
+}
+.text_6 {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+}
+.border_area {
+  width: 257px;
+  height: auto;
+  border: 2px solid #d6e029;
+  border-radius: 5px;
+  padding: 10px 0px;
+}
+.inner_area{
+  display: grid;
+  place-items: center;
+}
+.image {
+  width: 54px;
+  height: 54px;
+  object-fit: scale-down;
+}
+.vehicle_card{
+  width: 51px;
+  height: 51px;
+  object-fit: scale-down;
+}
+.text_7 {
+  font-size: 13px;
+  margin: 5px 0px;
+}
+.backround {
+  width: 100%;
+  height: auto;
+  background-color: #f9f9f9;
+  padding-bottom: 35px;
+}
+.phone_back {
+  width: 340px;
+  height: 370px;
+  background-color: #fff;
+  display: grid;
+  justify-content: center;
+}
+.text_8 {
+  position: relative;
+  top: 15px;
+  font-size: 25px;
+  font-family: "ChopinScript";
+  font-weight: 700;
+}
+.mobile {
+  width: 260px;
+  height: 277px;
+  object-fit: scale-down;
+  transition: all 0.5s ease-in-out;
+  padding: 10px 0px;
+}
+.mobile:hover {
+  transform: scale(0.9);
+}
+
+.text_9 {
+  position: relative;
+  top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.app_back {
+  width: 340px;
+  height: 70px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 3px solid #00446b;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.know {
+  width: 128px;
+  height: 44px;
+  background-color: #d5df28;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text_10{
+  margin: 0;
+}
+.app {
+  width: 44px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #5dd8f5;
+}
+.app >img{
+  width: 60%;
+}
+.apple {
+  width: 44px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #5dd8f5;
+  margin: 0px 5px;
+}
+.fa-apple {
+  font-size: 31px;
+  color: #898989;
+}
+
+.text_11 {
+  color: #878c18;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.text_12 {
+  color: #333;
+  font-size: 27px;
+  font-weight: 600;
+}
+.tool {
+  width: 20px;
+  height: 360px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 5px solid #e1e7e8;
+}
+.tool ul {
+  list-style-type: none;
+}
+.tool> ul > li{
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin: 27px -10px;
+  box-shadow: 2px 5px 10px -2px #000;
+}
+.dot_1:nth-child(1) {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background: #d5df28;
+}
+.dot_1:nth-child(2) {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background: #d5df28;
+}
+.dot_1:nth-child(3) {
+  position: relative;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background: #d5df28;
+}
+
+.tooltip_right::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -6px;
+  border: 10px solid #000;
+  border-color: transparent #000 transparent transparent;
+}
+.tooltip_left::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -12px;
+  border: 10px solid #000;
+  border-color: transparent transparent transparent #000;
+  z-index: -3;
+}
+[data-tooltip] {
+  position: absolute;
+  right: -15px;
+}
+
+[data-tooltip]::after {
+  position: absolute;
+  width: 370px;
+  left: 10px;
+  bottom: -46px;
+  text-align: center;
+  box-sizing: border-box;
+  color: #000;
+  background: #f2f6f7;
+  content: attr(data-tooltip);
+  padding: 15px 9px;
+  font-size: 13px;
+  border-radius: 10px;
+}
+[data-tooltips] {
+  position: absolute;
+  left: -15px;
+}
+[data-tooltips]::before {
+  position: absolute;
+  width: 370px;
+  right: 8px;
+  bottom: -50px;
+  text-align: center;
+  box-sizing: border-box;
+  color: #000;
+  background: #f2f6f7;
+  content: attr(data-tooltips);
+  padding: 15px 9px;
+  font-size: 13px;
+  border-radius: 6px;
+}
+.text_13 {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 600;
+}
+span {
+  color: #d6e029;
+}
+strong {
+  color: #0e7300;
+}
+.footer {
+  background-color: #131a22;
+  width: 100%;
+  height: auto;
+}
+.text_14 {
+  color: #f9fafa;
+  font-size: 21px;
+}
+.play_area,
+.store_area {
+  width: 185px;
+  height: auto;
+  border: 2px solid #f9fafa;
+  border-radius: 5px;
+  background: linear-gradient(50deg, #1a1a1a, #666);
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.text_15 {
+  color: #f9fafa;
+  font-size: 14px;
+  line-height: 19px;
+}
+.text_15 a {
+  font-size: 18px;
+  color: #f9fafa;
+}
+.playstore {
+  width: 35px;
+  height: 100%;
+  object-fit: scale-down;
+}
+.apple_store {
+  color: #f9fafa;
+  font-size: 30px;
+  width: 33px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+hr {
+  border: 1px dashed #767575;
+}
+.fontawesome{
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.fa-hand-o-right {
+  color: #767575;
+  font-size: 24px;
+}
+.text_16 {
+  color: #767575;
+  font-size: 19px;
+  margin: 0;
+}
+.text_17 a {
+  color: #d6e029;
+  font-size: 18px;
+}
+.text_17 a:hover {
+  text-decoration: none;
+}
+.add {
+  color: #767575;
+}
+.connect {
+  font-size: 23px;
+  color: #f9fafa;
+  font-weight: 600;
+}
+.face,
+.twit,
+.link {
+  width: 50px;
+  height: 50px;
+  background-color: #27374a;
+  border-radius: 50%;
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 6px 0px 0px;
+  box-shadow: 1px 9px 9px -2px #000;
+  margin-top: 9px;
+  transition: 300ms ease-in-out;
+}
+.face:hover,
+.twit:hover,
+.link:hover {
+  transform: translateY(-16px);
+}
+.fa-facebook-f,
+.fa-twitter,
+.fa-linkedin {
+  color: #d6e029;
+  font-size: 21px;
+}
+.lorem {
+  color: #767575;
+}
+
+/*mediaquery start----------------------*/
+
+@media screen and (min-width: 991.5px) and (max-width: 1160px) {
+  .phone_back,
+  .app_back {
+    width: 297px;
+  }
+  .border_area {
+    width: 226px;
+  }
+  .play_area {
+    width: 185px;
+  }
+  .text_15 {
+    font-size: 14px;
+  }
+  .playstore {
+    width: 44px;
+  }
+  .row {
+    flex-wrap: nowrap;
+  }
+  .text_16 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .number_align{
+    padding: 20px 0px 0px 0px;
+  }
+  .border_area {
+    text-align: center;
+    margin: 10px 0px;
+  }
+  .image {
+    width: 33px;
+    height: 31px;
+    object-fit: scale-down;
+  }
+  .all_device {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .text_7 {
+    font-size: 12px;
+  }
+  .text_8 {
+    font-size: 21px;
+  }
+  .phone_back {
+    margin: 10px 0px 0px 0px;
+  }
+  .mobile {
+    width: 200px;
+    height: 213px;
+    object-fit: scale-down;
+  }
+  .text_15 a {
+    font-size: 18px;
+  }
+  .text_16 {
+    font-size: 12px;
+  }
+  .store_align{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .app_align{
+    width: 30%;
+    padding-right: 0px;
+  }
+  .playstore {
+    width: 80%;
+  }
+  .apple_store{
+    justify-content: flex-start;
+  }
+  .wrap {
+    flex-wrap: nowrap;
+  }
+  .fontawesome {
+    width: 7%;
+  }
+}
+@media screen and (min-width: 600.5px) and (max-width: 800px) {
+  .text_1{
+    top: 18%;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .text_6 {
+    font-size: 22px;
+  }
+  .video {
+    width: 80px;
+    height: 82px;
+  }
+  [data-tooltips]::before, [data-tooltip]::after {
+    width: 275px;
+  }
+  .all_device, .device{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px){
+  .text_1{
+    top: 18%;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .text_2{
+    top: 25%;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 28px;
+    line-height: 29px;
+  }
+  .text_3{
+    top: 56%;
+    color: #fff
+  }
+  .text_16 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .text_4 {
+    color: #fff;
+  }
+  .navbar-brand,
+  .logo {
+    width: 57px;
+    height: auto;
+    object-fit: scale-down;
+  }
+  .navbar-toggler {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  .back {
+    width: 107px;
+    height: 107px;
+  }
+  .video {
+    width: 80px;
+    height: 82px;
+  }
+  .border_area {
+    width: 237px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 8px;
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0px !important;
+    position: relative;
+    top: 5px;
+  }
+  .phone_back,
+  .app_back {
+    width: 100%;
+  }
+  .apple_store {
+    font-size: 33px;
+  }
+  .text_15 {
+    font-size: 12px;
+  }
+  .text_15 a {
+    display: block;
+    margin: 0px;
+    line-height: 17px;
+  }
+  [data-tooltips]::before {
+    width: 200px;
+  }
+  [data-tooltip]::after {
+    width: 200px;
+  }
+  .text_7 {
+    text-align: center;
+  }
+}
+@media (max-width: 460px) {
+  .text_2{
+    font-size: 24px;
+  }
+  .box {
+    width: 292px;
+  }
+  .text_5 {
+    font-size: 14px;
+  }
+  .text_6 {
+    font-size: 18px;
+  }
+  [data-tooltips]::before, [data-tooltip]::after{
+    width: 150px;
+  }
+}
+@media (max-width: 360px) {
+  [data-tooltips]::before , [data-tooltip]::after {
+    width: 140px;
+  }
+  .text_3{
+    font-size: 18px;
+  }
+}
